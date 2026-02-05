@@ -69,7 +69,3 @@ split-pdf/
 ├── README.md          # Documentación
 └── venv/              # Entorno virtual (no incluido en Git)
 ```
-
-## Licencia
-
-MIT License
