@@ -140,6 +140,12 @@ def main():
     print()
     
     try:
+        # Asegurar que el archivo de salida tenga extensión .pdf
+        if not output_path.lower().endswith('.pdf'):
+            output_path = output_path + '.pdf'
+            print(f"Nota: Se agregó extensión .pdf al archivo de salida")
+            print()
+        
         # Parsear los rangos de páginas
         pages = parse_page_ranges(ranges_str)
         print(f"Páginas a extraer: {len(pages)} página(s)")
